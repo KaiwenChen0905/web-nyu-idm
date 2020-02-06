@@ -1,0 +1,208 @@
+<html>
+  <!-- The <head> tag in HTML is used to define the head portion of the document. It contains <title> of the webpage and the <style>, which we usually put CSS inside. -->
+  <head>
+    <!-- The <title> tag is used for declare a title to the page. It is diplayed in the webpage task bar in the browsers. -->
+    <title>here come the planes</title>
+    <!-- The <style> tag is used for put CSS language inside that "decorates" the HTML sentences -->
+    <style>
+    body {
+      /* This line means the whole background of the webpage is in BlanchedAlmond*/
+      background-color: BlanchedAlmond;
+      /* This line means the word color inside paragraph is in the color of Coral */
+      color: coral;
+      /* This line means all the text in the webpage are aligned in the center */
+      text-align: center;
+      /* This line means all the text size in the paragraph is 40 pixels large/ */
+      font-size: 40px;
+    }
+
+    a {
+      /* for the final link in the last sentences, the color for the link is cadetblue */
+      color: cadetblue;
+      /* for the final link in the last sentences, the font for the link is times new roman */
+      font-family: times;
+      /* this is the shadow behind the font itself. The shadow color is lightslategrey */
+      text-shadow: 3px 3px lightslategrey;
+      /* 1 em = 16px, the font size is 1 em */
+      font-size: 1.5em;
+    }
+
+    h1 {
+      /* for the header 1, the color of the font is orange */
+      color: orange;
+      /* for the header 1, the typography for the font is georgia */
+      font-family: georgia;
+      /* for the header 1, the style of the font is obluque */
+      font-style: oblique;
+      /* this is the shadow behind the font itself. The shadow color is lightslategrey,and the shift is 5px horizontally and 7px */
+      text-shadow: 5px 7px lightslategrey;
+        /* 3 em = 48px, the font size is 3 em */
+      font-size: 3em;
+    }
+
+    /* this is a class I seperated in the body section*/
+    .second {
+      /* this adds a line above the text */
+      text-decoration: overline;
+      /* the background of the text bpx is Dimgrey */
+      background-color: Dimgrey;
+      /* the font color in the second class */
+      color:floralwhite;
+      /* the font family in the class is Impact */
+      font-family: Impact;
+      /* the text shadow behind the font is olive  */
+      text-shadow: 4px 4px olive;
+      /* the font size in the class is 1em */
+      font-size: 1em;
+      /* the text box is 80 percent wide of the page */
+      width:80%;
+      /* the height of the text box is based on the length of the text */
+      height: auto;
+      /* the margin set is auto */
+      margin: auto;
+      /* this is the shadow for the box, the box is big so the shift is both 20 pixels */
+      box-shadow: 20px 20px white;
+    }
+
+    h3{
+      /* all the texts in header 3 is uppercase */
+      text-transform: uppercase;
+      /* the text in header 3 is orange */
+      color: orange;
+      /* the text font in header 3 is Tahoma */
+      font-family: Tahoma;
+      /* this add glowing effects behind the text */
+      text-shadow: 8px 8px coral, 0 0 25px orange, 0 0 5px darksalmon;
+      font-size: 2em;
+    }
+
+    .third {
+      /* in "third" class, all the text color is peachpuff */
+      color:peachpuff;
+      /* in third class, all the typography used is arial */
+      font-family: arial;
+      /* in third class, all the font style is italic */
+      font-style: italic;
+      /* in the third class, all the font have a teal shadow behind the text */
+      text-shadow: 4px 4px teal;
+      /* in the third class, the font size is 1.5em */
+      font-size: 1.5em;
+    }
+
+    h6{
+      /* in the header 6 there is a text box, color is wheat */
+      background-color: wheat;
+      /* the font color in header 6 is thistle */
+      color:thistle;
+      /* the font family in header 6 comic sans*/
+      font-family: comic;
+      /* the font have a whitesmoke shadow behind the text */
+      text-shadow: 4px 4px whitesmoke ;
+      /* the font size in this section is 1em */
+      font-size: 1em;
+      /* the width of the text box is 20 percent wide of the whole page */
+      width:20%;
+      /* the height of the text box is 200 percent high of the text */
+      height: 200%;
+      /* the margin of the box is set to auto */
+      margin: auto;
+      /* this is the shadow for the box, the color is gainsboro */
+      box-shadow: 20px 20px gainsboro;
+    }
+
+    /* I added a empty line so there is space between the edge and the header 6 words */
+    h7{
+      color:aliceblue;
+      font-family: comic;
+      text-shadow: 4px 4px black ;
+      font-size: 1em;
+    }
+
+    /* hover means there will be a different effect when we put our mouse on the text */
+    a:hover {
+      /* when the mouse hovers the link, the link color will be white */
+      color: white;
+      /* when the mouse hovers the link, the text wull be bigger to 3em */
+      font-size: 3em;
+      /* when the mouse hovers the link, the shadow will change its color to gold */
+      text-shadow: 3px 3px Gold;
+    }
+
+    h1:hover {
+      /* when the mouse hovers the header 1, the text will rotate 180 degrees */
+      transform: rotate(180deg);
+    }
+
+    .second:hover{
+      /* when the mouse hovers the elements in the second class, the box color will become floralwhite*/
+      background-color:floralwhite
+      /*  when the mouse hovers the elements in the second class,the font color will become coral */
+      color: coral;
+       /* when the mouse hovers the elements in the second class, the shadow behind the font will become gold*/
+      text-shadow: 4px 4px Gold;
+       /* when the mouse hovers the elements in the second class, the shadow behind the text box will become black*/
+      box-shadow: 20px 20px black;
+       /* when the mouse hovers the elements in the second class, all the elements will skew 20 degrees in X degree*/
+      transform: skewX(20deg);
+    }
+
+    .third:hover{
+      /*  when the mouse hovers the elements in the Third class, everything will scale double time in X direction */
+       transform:scaleX(2);
+    }
+
+    img:hover{
+       /* when the mouse hovers the picture, the size of the picture will multiple by two */
+      transform: scale(2);
+       /* when the mouse hovers the picture, the opacity of the picture will become 50 percent*/
+      opacity:0.5;
+    }
+
+    /* this creates a circle */
+    .circle {
+     height: 100px;
+     width: 100px;
+     background-color: #555;
+     border-radius: 50%;
+    }
+
+    /* this creates a triangle */
+    .triangle {
+      width: 0;
+    	height: 0;
+    	border-left: 50px solid transparent;
+    	border-right: 50px solid transparent;
+    	border-bottom: 100px solid burlywood;
+    }
+    /* this is the end of where we type CSS language in */
+    </style>
+  </head>
+
+  <!-- here is were we start to put the elements(text, header, image) by using HTML language -->
+  <body>
+    <!-- this adds a animation to the circle which is going left to right from the page edge -->
+    <marquee direction = "left"><div class="circle"></div></marquee>
+    <!-- h1 is the first header, the biggest and the top -->
+    <h1>Hello？</h1>
+    <!--  this adds a animation to the triangle which is going right to left from the page edge  -->
+    <marquee direction = "right"><div class="triangle"></div></marquee>
+  c
+    <div class = "second">
+     <b>This is your Mother.</b>
+     <h2>Are you coming home?</h2>
+    </div>
+    <!-- This adds a animation to the <header3> text, so the text will flow form right to left -->
+    <marquee direction = "right"><h3>Ah ah ah ah ah ah...</h3></marquee>
+    <!-- this is how to insert a picture inside the webpage -->
+    <img src = "https://i.redd.it/ipaydyabege21.jpg">
+    <!-- this means I created a class and put the <header4> and <header5> inside, so I can control them at the same tume -->
+    <div class = "third">
+     <h4>Hello?</h4>
+     <h5>Is <strong>anybody</strong> home?</h5>
+    </div>
+    <!-- the <a> means I can put a link inside my texts -->
+    <h6>Well, you don't know <a href="https://carolinemche.github.io/web-nyu-idm/here-come-the-planes">me</a></h6>
+    <h7>_______</h7>
+  <!-- this is the end where we put HTML elements in the body -->
+  </body>
+</html>
