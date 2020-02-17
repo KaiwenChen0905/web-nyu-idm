@@ -1,0 +1,68 @@
+
+/* This is default helpul CSS to include - dont edit this part unless... you want to */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* THE END of default helpful basic CSS to include. EDIT the stuff BELOW this line*/
+
+@font-face {
+  font-family: 'Kirang Haerang', cursive;
+  src: url('./fonts/VioletSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* LEVEL 3: Selects the element with a specific id. Here I set Header-2 as the id for h2. */
+#Header2{
+  font-family: "Kirang Haerang";
+  color: grey;
+  font-size: 40px;
+
+}
+
+/* LEVEL 7: Combining the class selector with the type selector. Here, all h3 types of class "first-header" are being selected. Any h3 types that do not have class "first-header" will be ignored */
+h3.first-header {
+  color:orange;
+  font-family: "Arial"
+}
+
+/* LEVEL 14: Selecting direct children of an element. The first p tag within the "outer-container" id is being selected. Anything below the p tag in the heirarchy is not selected. */
+#outer-container > p {
+  font-family: "Times New Roman", serif;
+}
+
+/* LEVEL 18: Selecting an element by its order in another element. The third p tag as a child element within the body was selected. Elements that are not p tags, or are not the third p tag are not selected. */
+p:nth-child(3) {
+  color:blue;
+}
+
+/* LEVEL: 23 Selecting elements that are the only ones of their type within the parent element. Here, the green text style has been applied to any p's which are the only ones of their type within a div. If there are multiple p's within one particular div, neither will be styled. */
+div p:only-of-type {
+  color:green;
+}
+
+body {
+  background-color: violet;
+  color: yellow;
+  text-align: center;
+  font-size: 2em;
+}
+
+.my-fun-class {
+  width: 40%;
+  border: 2px solid forestgreen;
+  display: block;
+  margin: auto;
+}
+
+img {
+  width: 40%;
+  padding: 2em;
+}
