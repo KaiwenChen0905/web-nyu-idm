@@ -2,6 +2,7 @@
 /* This is default helpul CSS to include - dont edit this part unless... you want to */
 html,
 body {
+  background-color: Pink;
   margin: 0;
   padding: 0;
 }
@@ -19,19 +20,20 @@ body {
   font-style: normal;
 }
 
-/* LEVEL 3: Selects the element with a specific id. Here I set Header-2 as the id for h2. */
+/* Level3: Selects the element with a specific id. Here I set Header2 as the id for h2. */
 #Header2{
   font-family: "Kirang Haerang";
   color: grey;
   font-size: 40px;
-
 }
 
-/* LEVEL 7: Combining the class selector with the type selector. Here, all h3 types of class "first-header" are being selected. Any h3 types that do not have class "first-header" will be ignored */
-h3.first-header {
-  color:orange;
-  font-family: "Arial"
+/* Level6: The class selector selects all elements with that class attribute. Elements can only have one ID, but many classes. Here I put header 3 and a picture into the class */
+.KevinDurant {
+  font-family: Times;
+  font-style: italic;
+  color: black
 }
+
 
 /* LEVEL 14: Selecting direct children of an element. The first p tag within the "outer-container" id is being selected. Anything below the p tag in the heirarchy is not selected. */
 #outer-container > p {
@@ -49,8 +51,8 @@ div p:only-of-type {
 }
 
 body {
-  background-color: violet;
-  color: yellow;
+  background-color: DarkSeaGreen;
+  color: Pink;
   text-align: center;
   font-size: 2em;
 }
