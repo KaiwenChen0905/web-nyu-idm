@@ -11,8 +11,6 @@ body {
   box-sizing: inherit;
 }
 
-/* THE END of default helpful basic CSS to include. EDIT the stuff BELOW this line*/
-
 @font-face {
   font-family: 'Kirang Haerang', cursive;
   src: url('./fonts/VioletSans-Regular.woff') format('woff');
@@ -20,8 +18,8 @@ body {
   font-style: normal;
 }
 
-/* Here are the levels 3, 6, 15,  and ! */
-/* Level3: Selects the element with a specific id. Here I set Header2 as the id for h2. */
+/* Here are the levels 3, 6, 15, 18 and ! */
+/* Level3: Selects the element with a specific id. Here I set Header2 as the id for h2. So when I can use #Header to search the second header */
 #Header2{
   font-family: "Kirang Haerang";
   color: grey;
@@ -35,10 +33,18 @@ body {
   color: black
 }
 
-/* Level15: Select a first child element inside of another element There are three p elements in the div, I selected the first one and changed its color and font while the other two remains/*/
+/* Level15: Select the first element inside a div. There are four p elements in this level 15 div, I selected the first one and changed its color and font while the other three remains/*/
 p:first-child {
   font-family: "Times";
   color: Green;
+}
+
+/* level18: Select an element by its order in another element. There are four b elements in the div. By using nth-child(3) means I can select the 3rd element and edit it seperately. Here I changed its color and font and made it all uppercase*/
+b:nth-child(3){
+  font-family: "Times";
+  text-transform: uppercase;
+  font-style: oblique;
+  color: gold;
 }
 
 
@@ -50,8 +56,9 @@ p:first-child {
 
 
 
-
-
+b{
+  color: Aliceblue;
+}
 
 body {
   background-color: DarkSeaGreen;
