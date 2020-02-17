@@ -18,15 +18,15 @@ body {
   font-style: normal;
 }
 
-/* Here are the levels 3, 6, 15, 18 and ! */
-/* Level3: Selects the element with a specific id. Here I set Header2 as the id for h2. So when I can use #Header to search the second header */
+/* Here are the levels 3, 6, 15, 18 and 24 ! */
+/* Level3: Selects the element with a specific id. Here I set "Header2" as the id for h2. So when I can use #Header2 to search the second header */
 #Header2{
   font-family: "Kirang Haerang";
   color: grey;
   font-size: 40px;
 }
 
-/* Level6: The class selector selects all elements with that class attribute. Elements can only have one ID, but many classes. Here I put header 3 and a picture into the class. So .KevinDurant sekects all elements in the class */
+/* Level6: The class selector selects all elements with that class attribute. Elements can only have one ID, but many classes. Here I put header 3 and a picture into the class. So .KevinDurant selects all elements in the class */
 .KevinDurant {
   font-family: Times;
   font-style: italic;
@@ -34,13 +34,13 @@ body {
 }
 
 /* Level15: Select the first element inside a div. There are four p elements in this level 15 div, I selected the first one and changed its color and font while the other three remains/*/
-p:first-child {
+div p:first-child {
   font-family: "Times";
   color: Green;
 }
 
-/* level18: Select an element by its order in another element. There are four b elements in the div. By using nth-child(3) means I can select the 3rd element and edit it seperately. Here I changed its color and font and made it all uppercase*/
-b:nth-child(3){
+/* level18: Select an element by its order in another element. There are four b elements in the div. By using nth-child(3) means I can select the 3rd element and edit it seperately. Here I changed its color and font and made it all uppercase (P.S. the last b is impacted by the level 24 last of type)*/
+div b:nth-child(3){
   font-family: "Times";
   text-transform: uppercase;
   font-style: oblique;
@@ -48,14 +48,20 @@ b:nth-child(3){
 }
 
 
+/* level24: Select the last element of a specific type. In this div, there are three p elements and two b elements. by using last-of-type on each element, I can select the last element of the same type and modifie it. (P.S. the first p is impacted by the level 15 first child)*/
+div p:last-of-type{
+  font-family:"times";
+  color: black;
+  text-decoration: overline;
+}
 
+div b:last-of-type{
+  font-family:"times";
+  color: black;
+  text-decoration: overline;
+}
 
-
-
-
-
-
-
+/* others... */
 b{
   color: Aliceblue;
 }
