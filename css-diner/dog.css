@@ -20,6 +20,7 @@ body {
   font-style: normal;
 }
 
+/* Here are the levels 3, 6, 15,  and ! */
 /* Level3: Selects the element with a specific id. Here I set Header2 as the id for h2. */
 #Header2{
   font-family: "Kirang Haerang";
@@ -27,31 +28,34 @@ body {
   font-size: 40px;
 }
 
-/* Level6: The class selector selects all elements with that class attribute. Elements can only have one ID, but many classes. Here I put header 3 and a picture into the class */
+/* Level6: The class selector selects all elements with that class attribute. Elements can only have one ID, but many classes. Here I put header 3 and a picture into the class. So .KevinDurant sekects all elements in the class */
 .KevinDurant {
   font-family: Times;
   font-style: italic;
   color: black
 }
 
-
-/* LEVEL 14: Selecting direct children of an element. The first p tag within the "outer-container" id is being selected. Anything below the p tag in the heirarchy is not selected. */
-#outer-container > p {
-  font-family: "Times New Roman", serif;
+/* Level15: Select a first child element inside of another element There are three p elements in the div, I selected the first one and changed its color and font while the other two remains/*/
+p:first-child {
+  font-family: "Times";
+  color: Green;
 }
 
-/* LEVEL 18: Selecting an element by its order in another element. The third p tag as a child element within the body was selected. Elements that are not p tags, or are not the third p tag are not selected. */
-p:nth-child(3) {
-  color:blue;
-}
 
-/* LEVEL: 23 Selecting elements that are the only ones of their type within the parent element. Here, the green text style has been applied to any p's which are the only ones of their type within a div. If there are multiple p's within one particular div, neither will be styled. */
-div p:only-of-type {
-  color:green;
-}
+
+
+
+
+
+
+
+
+
+
 
 body {
   background-color: DarkSeaGreen;
+  font-family: lucida;
   color: Pink;
   text-align: center;
   font-size: 2em;
