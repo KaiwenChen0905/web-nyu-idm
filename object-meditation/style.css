@@ -24,8 +24,30 @@ body {
 
 h1 {
   font-family: "Spartan";
+  font-weight: 1200;
   color: grey;
-  font-size: 40px;
+  font-size: 60px;
+  text-shadow: 6px 4px antiquewhite;
+}
+
+h2 {
+  font-family: "Spartan";
+  color: grey;
+  font-size: 20px;
+}
+
+h3 {
+  font-family: "Spartan";
+  color: darkgrey;
+  font-size: 10px;
+}
+
+a {
+  font-style: italic;
+  color: Gold;
+  background-color: grey;
+  width:auto;
+  height:auto;
 }
 
 @media only screen and (max-width: 600px) {

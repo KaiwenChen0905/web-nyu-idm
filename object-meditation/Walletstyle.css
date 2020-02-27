@@ -16,32 +16,36 @@ body {
 }
 
 body {
-  background-color: floralwhite;
-  color: Grey;
+  background-color: darkseagreen;
+  color: floralwhite;
   text-align: center;
-  font-size: 2em;
+  font-size: 17px;
 }
 
 h1 {
   font-family: "Spartan";
-  color: grey;
-  font-size: 40px;
+  color: floralwhite;
+  font-size: 50px;
+  width: 20%;
+  height: 50%;
+  margin: auto;
+  background-color: Dimgrey;
+  box-shadow: 10px 10px white;
 }
 
 h2 {
   font-family: "Spartan";
   font-style: normal;
+  color: pink;
+  font-size: 30px;
+}
+
+a {
   color: floralwhite;
-  font-size: 40px;
   width: 45%;
   height: 50%;
   margin: auto;
   background-color: Dimgrey;
-}
-
-a {
-  color: gold;
-  font-style: Italic;
 }
 
 @media only screen and (max-width: 600px) {
