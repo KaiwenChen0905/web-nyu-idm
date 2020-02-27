@@ -10,9 +10,23 @@ body {
 
 @font-face {
   font-family: 'Spartan', cursive;
+  font-family: 'Amatic SC', cursive;
   src: url('./fonts/VioletSans-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+img{
+  width:30%;
+  height:30%;
+}
+
+
+.wallet {position: relative;}
+.wallet .link{
+  position: absolute;
+  right: 685px;
+  top: 260px
 }
 
 body {
@@ -23,10 +37,10 @@ body {
 }
 
 h1 {
-  font-family: "Spartan";
+  font-family: "Amatic SC";
   font-weight: 1200;
   color: grey;
-  font-size: 60px;
+  font-size: 80px;
   text-shadow: 6px 4px antiquewhite;
 }
 
@@ -34,24 +48,97 @@ h2 {
   font-family: "Spartan";
   color: grey;
   font-size: 20px;
+  position:relative;
+  top: -370px;
+  left: 500px;
 }
 
 h3 {
   font-family: "Spartan";
-  color: darkgrey;
+  color: grey;
   font-size: 10px;
 }
 
+h4 {
+  font-family: "Spartan";
+  color: grey;
+  font-size: 25px;
+  line-height: 42px;
+  position:relative;
+  top: -510px;
+  left: 200px;
+  width: 300px;
+}
+
 a {
-  font-style: italic;
-  color: Gold;
+  color: floralwhite;
+  font-size:28px;
+  text-decoration: none;
   background-color: grey;
-  width:auto;
+  opacity: 0.6;
+  line-height: 100px;
+  border-radius: 50%;
+  width:100px;
   height:auto;
 }
 
-@media only screen and (max-width: 600px) {
+a:hover {
+  opacity: 0.99;
+}
+
+@media only screen and (max-width: 828px) {
   body {
-    background-color: lightblue;
+    background-color: cornsilk;
+  }
+
+  .wallet {position: relative;}
+  .wallet .link{
+    position: absolute;
+    right: 170px;
+    top: 225px
+  }
+
+
+  img{
+    width:60%;
+    height:50%;
+  }
+
+  h1{
+    font-size: 80px
+  }
+
+  h2{
+    font-size: 13px
+    position:relative;
+    top: -330px;
+    left: 680px;
+    width: 100px;
+  }
+
+  h3 {
+    font-size: 5px;
+  }
+
+  h4 {
+    font-size: 15px;
+    line-height: 30px;
+    position:relative;
+    top: -520px;
+    left: 30px;
+    width: 150px;
+
+  }
+
+  a {
+    color: floralwhite;
+    font-size:28px;
+    text-decoration: none;
+    background-color: grey;
+    opacity: 0.8;
+    line-height: 100px;
+    border-radius: 50%;
+    width:100px;
+    height:auto;
   }
 }

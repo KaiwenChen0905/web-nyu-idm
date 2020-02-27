@@ -10,16 +10,22 @@ body {
 
 @font-face {
   font-family: 'Spartan', cursive;
+  font-family: 'Amatic SC', cursive;
   src: url('./fonts/VioletSans-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  background-color: darkseagreen;
+  background-color: darksalmon;
   color: floralwhite;
   text-align: center;
   font-size: 17px;
+}
+
+img{
+  width:50%;
+  height:40%;
 }
 
 h1 {
@@ -34,13 +40,15 @@ h1 {
 }
 
 h2 {
-  font-family: "Spartan";
+  font-family: "Amatic SC";
   font-style: normal;
-  color: pink;
-  font-size: 30px;
+  color: whitesmoke;
+  font-size: 40px;
 }
 
 a {
+  font-family: "Amatic SC"
+  font-size: 40px;
   color: floralwhite;
   width: 45%;
   height: 50%;
@@ -48,8 +56,38 @@ a {
   background-color: Dimgrey;
 }
 
+
 @media only screen and (max-width: 600px) {
   body {
-    background-color: lightblue;
+    font-size: 14px;
+    background-color:darksalmon;
   }
+
+  h1 {
+    font-family: "Spartan";
+    color: floralwhite;
+    font-size: 50px;
+    width: 62%;
+    height: 50%;
+    margin: auto;
+    background-color: Dimgrey;
+    box-shadow: 10px 10px white;
+  }
+
+  h2 {
+    font-family: "Spartan";
+    font-style: normal;
+    color: pink;
+    font-size: 20px;
+  }
+
+  img{
+    width:70%;
+    height:60%;
+  }
+
+  a {
+    font-size: 15px;
+  }
+
 }
