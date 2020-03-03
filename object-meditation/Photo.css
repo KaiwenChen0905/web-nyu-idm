@@ -15,17 +15,40 @@ body {
   font-style: normal;
 }
 
+.Photo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.Photo2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+img{
+  width:70%;
+  height:50%;
+  margin-left: -140px;
+  margin-right: 50px;
+}
+
 body {
   background-color: floralwhite;
   color: Grey;
   text-align: center;
-  font-size: 2em;
+  font-size: 20px;
 }
 
 h1 {
   font-family: "Spartan";
   color: grey;
   font-size: 40px;
+  margin-left: 100px;
+  margin-right: 50px;
 }
 
 h2 {
@@ -33,18 +56,69 @@ h2 {
   color: floralwhite;
   font-size: 20px;
   text-align: center;
-  width: 10%;
+  width: 40%;
   height: 50%;
   margin: auto;
   background-color: Dimgrey;
+  margin-left: -230px;
+  margin-right: 50px;
+}
+
+h3 {
+  font-family: "Spartan";
+  text-align: justify;
+  color: grey;
+  font-size: 20px;
+  width: 40%;
+  line-height: 30px;
+  margin-left: 50px;
 }
 
 a {
   color: gold;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
+@media only screen and (max-width: 828px) {
+  .Photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
+  .Photo2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  img{
+    width:80%;
+    height:50%;
+    margin-right: -120px;
+  }
+
+  h2 {
+    font-family: "Spartan";
+    color: floralwhite;
+    font-size: 20px;
+    text-align: center;
+    width: 25%;
+    height: 50%;
+    margin: auto;
+    background-color: Dimgrey;
+    margin-top: 60px;
+  }
+
+  h3 {
+    font-family: "Spartan";
+    color: grey;
+    font-size: 18px;
+    width: 40%;
+    text-align:justify;
+    line-height: 30px;
+    margin-left: 90px;
+
+  }
+
 }
