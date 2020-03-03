@@ -15,11 +15,76 @@ body {
   font-style: normal;
 }
 
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  from{
+     opacity:0;
+   }
+   to{
+     opacity:1;
+   }
+}
+
+@keyframes fadein {
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    animation: fadein 7s;
+}
+
+.fullscreen-bg__video {
+    filter: blur(10);
+    filter:brightness(0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: fadein 7s;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: auto;
+    height: 100%;
+  }
+}
+
 .Photo {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  animation: slidein 3s;
 }
 
 .Photo2 {
@@ -27,6 +92,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  animation: slidein 3.5s;
 }
 
 img{
@@ -45,7 +111,7 @@ body {
 
 h1 {
   font-family: "Spartan";
-  color: grey;
+  color: floralwhite;
   font-size: 40px;
   margin-left: 100px;
   margin-right: 50px;
@@ -67,7 +133,7 @@ h2 {
 h3 {
   font-family: "Spartan";
   text-align: justify;
-  color: grey;
+  color: floralwhite;
   font-size: 20px;
   width: 40%;
   line-height: 30px;
@@ -112,7 +178,7 @@ a {
 
   h3 {
     font-family: "Spartan";
-    color: grey;
+    color: floralwhite;
     font-size: 18px;
     width: 40%;
     text-align:justify;

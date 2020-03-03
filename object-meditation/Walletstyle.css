@@ -22,6 +22,7 @@ body {
       to{
         transform: scale(1);
       }
+      
 }
 
 @font-face {
@@ -31,6 +32,8 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+
 
 body {
   background-color: Bisque;
