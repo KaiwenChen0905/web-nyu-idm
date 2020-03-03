@@ -16,6 +16,17 @@ body {
   font-style: normal;
 }
 
+@keyframes bounce {
+   0%, 100% {
+      opacity: 1;
+      transform: scale(0.95);
+    }
+   50% {
+     opacity: 0.8;
+     transform: scale(1);
+    }
+}
+
 img{
   width:30%;
   height:30%;
@@ -34,6 +45,7 @@ body {
   color: Grey;
   text-align: center;
   font-size: 2em;
+
 }
 
 h1 {
@@ -42,15 +54,22 @@ h1 {
   color: grey;
   font-size: 80px;
   text-shadow: 6px 4px antiquewhite;
+  animation: bounce 4s;
+  animation-iteration-count: infinite;
 }
 
 h2 {
   font-family: "Spartan";
   color: grey;
-  font-size: 20px;
+  font-size: 25px;
   position:relative;
+  width: 27%;
   top: -370px;
-  left: 500px;
+  text-align: right;
+  margin-left: 1250px;
+  animation: bounce 5s;
+  animation-iteration-count: infinite;
+
 }
 
 h3 {
@@ -68,6 +87,8 @@ h4 {
   top: -510px;
   left: 200px;
   width: 300px;
+  animation: bounce 5s;
+  animation-iteration-count: infinite;
 }
 
 a {
@@ -109,11 +130,13 @@ a:hover {
   }
 
   h2{
-    font-size: 13px
+    font-size: 15px
     position:relative;
     top: -330px;
     left: 680px;
     width: 100px;
+    text-align: center;
+    margin-left: 0;
   }
 
   h3 {
@@ -124,7 +147,7 @@ a:hover {
     font-size: 15px;
     line-height: 30px;
     position:relative;
-    top: -520px;
+    top: -650px;
     left: 30px;
     width: 150px;
 
