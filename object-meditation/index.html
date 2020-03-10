@@ -4,12 +4,14 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Kevin's Wallet</title>
+  <title>Open it</title>
+  <link rel = "icon" href =  "./assets/logo.png"  type = "image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
   <link href="https://fonts.font.im/css?family=Amatic+SC" rel="stylesheet">
 </head>
 
 <body>
+  <section>
   <h1>Kevin's Wallet</h1>
     <div class="wallet">
       <img src="./assets/Wallet1.png" alt="image  discription"/>
@@ -18,7 +20,25 @@
     <h2>····· Click the button to open the wallet</h2>
     <h3>Website made by Kaiwen Chen in 2020</h3>
     <h4>This is the wallet my girlfriend Karen gave me for my 18th birthday</h4>
-    <script type="text/javascript" src="script.js"></script>
+  </section>
+
+  <ul>
+   <li>
+    <span>Dark</span>
+    <span>Light</span>
+   </li>
+  </ul>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+ <script type="text/javascript">
+  $(document).ready(function(){
+   $('ul').click(function(){
+    $('ul').toggleClass('active')
+    $('section').toggleClass('dark')
+   })
+  })
+</script>
+
 </body>
 
 </html>

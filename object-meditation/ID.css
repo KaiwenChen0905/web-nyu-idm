@@ -1,8 +1,12 @@
 html,
 body {
+  background-image: url('./assets/nyu.jpg');
+  object-fit: cover;
   margin: 0;
   padding: 0;
 }
+
+
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -15,17 +19,76 @@ body {
   font-style: normal;
 }
 
+@keyframes fadein {
+  from{
+    opacity:0;
+    transform: scale(0.2);
+  }
+  to{
+    opacity:1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+   0%, 100% {
+      transform: scale(0.9);
+    }
+   50% {
+     transform: scale(1);
+    }
+}
+
+.ID {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  animation: fadein 3.5s;
+}
+
+.ID1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: -200px;
+}
+
+.ID2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 170px;
+}
+
+img{
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
 body {
-  background-color: floralwhite;
-  color: Grey;
+  color: antiquewhite;
   text-align: center;
-  font-size: 2em;
+  font-size: 10px;;
+}
+
+p {
+  font-family: "Spartan";
+  color: antiquewhite;
+  text-align: center;
+  font-size: 10px;;
+  animation: bounce 4s;
+  animation-iteration-count: infinite;
 }
 
 h1 {
   font-family: "Spartan";
-  color: grey;
+  color: floralwhite;
   font-size: 40px;
+  margin-right: 50px;
 }
 
 h2 {
@@ -33,18 +96,95 @@ h2 {
   color: floralwhite;
   font-size: 20px;
   text-align: center;
-  width: 10%;
+  line-height: 32px;
+  width: 45%;
+  margin-right: 50px;
+  text-align: justify;
+}
+
+h3{
+  font-family: "Spartan";
+  color: floralwhite;
+  font-size: 15px;
+  text-align: center;
+  width: 50%;
   height: 50%;
   margin: auto;
-  background-color: Dimgrey;
+  border: 2px solid #fff;
+  margin-left: 50px;
 }
 
 a {
-  color: gold;
+  color: floralwhite;
+  text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
+h3:hover {
+  background-color: floralwhite;
+}
+
+a:hover{
+  color: black;
+}
+
+@media only screen and (max-width: 828px) {
+  .ID1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadein 3.5s;
+    margin-top: 30px;
+    margin-left: 100px;
+  }
+
+  .ID2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadein 4s;
+    margin-top: 100px;
+  }
+
+  img{
+    align-items: left;
+    margin-top: -20px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+  }
+
+  h1 {
+    font-family: "Amatic SC";
+    font-style: oblique;
+    color: floralwhite;
+    width: 65%;
+    font-size: 50px;
+    margin-right: 110px;
+    margin-bottom: -5px;
+    margin-left: 205px;
+  }
+
+  h2 {
+    font-family: "Spartan";
+    color: floralwhite;
+    font-size: 18px;
+    text-align: center;
+    line-height: 27px;
+    width: 65%;
+    margin-right: 50px;
+    text-align: right;
+  }
+
+  h3{
+    font-family: "Spartan";
+    color: floralwhite;
+    font-size: 15px;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    border: 2px solid #fff;
+    margin-left: 50px;
   }
 }

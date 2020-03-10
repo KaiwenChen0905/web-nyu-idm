@@ -96,10 +96,10 @@ body {
 }
 
 img{
-  width:70%;
+  width:60%;
   height:50%;
-  margin-left: -140px;
-  margin-right: 50px;
+  margin-left: -200px;
+  margin-right: 0px;
 }
 
 body {
@@ -114,20 +114,21 @@ h1 {
   color: floralwhite;
   font-size: 40px;
   margin-left: 100px;
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 h2 {
   font-family: "Spartan";
   color: floralwhite;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
-  width: 40%;
+  width: 30%;
   height: 50%;
   margin: auto;
-  background-color: Dimgrey;
-  margin-left: -230px;
+  border: 2px solid #fff;
+  margin-left: -300px;
   margin-right: 50px;
+
 }
 
 h3 {
@@ -135,13 +136,22 @@ h3 {
   text-align: justify;
   color: floralwhite;
   font-size: 20px;
-  width: 40%;
+  width: 35%;
   line-height: 30px;
-  margin-left: 50px;
+  margin-right: 50px;
 }
 
 a {
-  color: gold;
+  color: floralwhite;
+  text-decoration: none;
+}
+
+h2:hover {
+  background-color: floralwhite;
+}
+
+a:hover{
+  color: black;
 }
 
 @media only screen and (max-width: 828px) {
@@ -172,7 +182,6 @@ a {
     width: 25%;
     height: 50%;
     margin: auto;
-    background-color: Dimgrey;
     margin-top: 60px;
   }
 

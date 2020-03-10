@@ -2,6 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background:#000;
 }
 
 *, *:before, *:after {
@@ -15,14 +16,6 @@ body {
       to{
         opacity:1;
       }
-
-      from{
-        transform: scale(0.90);
-      }
-      to{
-        transform: scale(1);
-      }
-      
 }
 
 @font-face {
@@ -33,7 +26,41 @@ body {
   font-style: normal;
 }
 
+.main{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+section{
+  position: relative;
+  top: 1080px;
+  padding: 100px;
+  width:100%;
+  min-height: 1080px;
+  box-sizing: border-box;
+}
+
+section h4{
+  color: #fff;
+  font-size: 40px;
+}
+
+section p {
+    color: #fff;
+    font-size: 20px;
+}
+
+section b {
+   color: #fff
+   font-size: 30px;
+}
 
 body {
   background-color: Bisque;
@@ -100,6 +127,7 @@ a {
     background-color:Bisque;
   }
 
+
   h1 {
     font-family: "Spartan";
     color: floralwhite;
@@ -109,6 +137,7 @@ a {
     margin: auto;
     background-color: Dimgrey;
     box-shadow: 10px 10px white;
+    margin-top: 50px;
   }
 
   h2 {
@@ -116,15 +145,18 @@ a {
     font-style: normal;
     color: dimgrey;
     font-size: 30px;
+    margin-top: 20px;
   }
 
   img{
     width:70%;
     height:80%;
+    margin-top: 20px;
   }
 
   a {
     font-size: 25px;
+    margin-top: 20px;
   }
 
 }

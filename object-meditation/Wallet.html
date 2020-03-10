@@ -5,20 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="Walletstyle.css">
   <title>Kevin's Wallet</title>
+  <link rel = "icon" href =  "./assets/logo.png"  type = "image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
   <link href="https://fonts.font.im/css?family=Amatic+SC" rel="stylesheet">
 </head>
 
 <body>
-  <h1>The Wallet</h1>
-  <p>This is it! The inside of the wallet!</p>
-  <img src="./assets/Wallet2.png" usemap="#image-map">
 
+  <div class="main">
+   <h1>The Wallet</h1>
+   <p>This is it! The inside of the wallet!</p>
+   <img src="./assets/Wallet2.png" usemap="#image-map">
+   <p>Click different buttons to unlock different stories</p>
+   <h2> · <a href="Photo.html">Photo</a> · <a href="ID.html">ID</a> · <a href="Doorcard.html">Doorcard</a> · <a href="Bankcard.html">Bankcard</a> · </h2>
+   <h3><a href="index.html">Home</a>
+  </div>
 
-  <p>Click different buttons to unlock different stories</p>
-  <h2> · <a href="Photo.html">Photo</a> · <a href="ID.html">ID</a> · <a href="Doorcard.html">Doorcard</a> · <a href="Bankcard.html">Bankcard</a> · </h2>
-  <h3><a href="index.html">Home</a>
-  <script type="text/javascript" src="script.js"></script>
+  <section>
+    <h4>Object Meditation: My favorite Wallet</h4>
+    <p>What are 5 words that come to mind when I think of this Object</p>
+    <p>·Love, Distance, Bond, Home, Warmth·</p>
+    <p>What does my object look like?</p>
+    <p>·It is a wallet, not very big and blue in color·</p>
+    <p>Where did you get it?</p>
+    <p>·My girlfriend made it by herself and gaved me·</p>
+    <p>What are the emotions attached to this object to you?</p>
+    <p>·It attached her love for me. Even we are thousands miles apart but the wallet represents her to stay by my side·</p>
+    <p>Why did you choose it?</p>
+    <p>·Because she made it all by herself·</p>
+    <p>What do you see in your object that no one else would see?</p>
+    <p>·All the things we've been went through·</p>
+    <p>How do you interact with it?</p>
+    <p>·I put all my card and cashes in and carry it every day·</p>
+    <p>What are some other objects it does or might have relationships with?</p>
+    <p>·The polaroid inside the wallet·</p>
+    <p>What is a specific memory yoou have with this object?</p>
+    <p>·When she give me the wallet, it is filled with our photos and it was so sweet·</p>
+  </section>
+
+  <script scr="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+         $(window).scroll(function(){
+            $(".main").css("opacity", 10 -
+               $(window).scrollTop()/700)
+         })
+      })
+  </script>
 
 </body>
 
