@@ -48,24 +48,23 @@ section{
 }
 
 section h4{
-  color: #fff;
-  font-size: 40px;
+  margin-top: 100px;
+  font-family: "Amatic SC";
+  color: gold;
+  font-size: 46px;
+
 }
 
 section p {
+    font-family: "Spartan";
     color: #fff;
-    font-size: 20px;
-}
-
-section b {
-   color: #fff
-   font-size: 30px;
+    font-size: 16px;
 }
 
 body {
   background-color: Bisque;
   color: lightslategrey;
-  text-align: center;
+  text-align:left;
   font-size: 17px;
   animation: fadeIn 4s;
 }
@@ -79,6 +78,7 @@ img{
 
 h1 {
   font-family: "Spartan";
+  text-align: center;
   color: floralwhite;
   font-size: 50px;
   width: 20%;
