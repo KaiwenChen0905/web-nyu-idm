@@ -121,10 +121,70 @@ a {
   animation: fadeIn 3s;
 }
 
+
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 14px;
+    background-color:Bisque;
+  }
+
+  section{
+    position: relative;
+    top: 1366px;
+    padding: 100px;
+    width:100%;
+    min-height: 1366px;
+    box-sizing: border-box;
+  }
+
+
+  h1 {
+    font-family: "Spartan";
+    color: floralwhite;
+    font-size: 40px;
+    width: 30%;
+    height: 50%;
+    margin: auto;
+    background-color: Dimgrey;
+    box-shadow: 10px 10px white;
+    margin-top: 50px;
+  }
+
+  h2 {
+    font-family: "Spartan";
+    font-style: normal;
+    color: dimgrey;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  img{
+    width:70%;
+    height:80%;
+    margin-top: 20px;
+  }
+
+  a {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+}
+
+
 @media only screen and (max-width: 828px) {
   body {
     font-size: 14px;
     background-color:Bisque;
+  }
+
+  section{
+    position: relative;
+    top: 1792px;
+    padding: 100px;
+    width:100%;
+    min-height: 1792px;
+    box-sizing: border-box;
   }
 
 

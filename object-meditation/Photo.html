@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="Photo.css">
   <title>The Photo</title>
-  <link rel = "icon" href =  "./assets/logo.png"  type = "image/x-icon"> 
+  <link rel = "icon" href =  "./assets/logo.png"  type = "image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
 </head>
 
@@ -21,13 +21,26 @@
   <div class= "Photo">
      <h1>The Photo</h1>
     <div class= "Photo2">
-     <h3>is a picture I took when we first met. At that time, I was the director of our school's club fest film while Karen is the main actress in the film. This was the first time we met. When I was taking photos of her for the film poster, we had a nice long chat in the classroom alone. We start to be intersted at each other through the conversation. We found that we have a lot in common and it was really pleasant to talk with each other. From that time, our lives intertwined. </h3>
-     <img src="./assets/Photo.png"></img>
+     <h3>is a picture I took when we first met. At that time, I was the director of our school's club fest film while Karen is the main actress in the film. This was the first time we met. When I was taking photos of her for the film poster, we had a nice long chat in the classroom alone. We start to be intersted at each other through the conversation. We found that we have a lot in common and it was really pleasant to talk with each other. From that time, our lives intertwined. (!Click on the Picture!) </h3>
+     <img src="./assets/Photo.png" id="walletphoto"></img>
     </div>
      <h2><a href="Wallet.html">Press to go back</a></h2>
   </div>
 
-    <script type="text/javascript" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+    $("document").ready(function(){
+      $("#walletphoto").click(function(){
+        // if ( $("#walletphoto").attr("src") === "./assets/Photo2.png" ) {
+        //  $("#walletphoto").attr("src", "./assets/Photo.png");
+        // } else {
+        //  $("#walletphoto").attr("src", "./assets/Photo2.png");
+        // }
+        $("#walletphoto").attr("src", ( ($("#walletphoto").attr("src") === "./assets/Photo2.png") ? "./assets/Photo.png" : "./assets/Photo2.png"));
+      });
+    })
+    </script>
+
 </body>
 
 </html>

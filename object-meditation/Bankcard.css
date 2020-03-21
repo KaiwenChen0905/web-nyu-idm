@@ -100,9 +100,41 @@ a:hover{
   color: black;
 }
 
+@media only screen and (max-width: 1024px) {
+  img{
+    width:600px;
+  }
+
+  h1{
+      margin-top: 100px;
+  }
+
+  h2 {
+    font-family: "Spartan";
+    width: 600px;
+    text-align: justify;
+    line-height: 50px;
+  }
+
+  h4 {
+    font-family: "Spartan";
+    width: 600px;
+    text-align: justify;
+    line-height: 50px;
+  }
+
+  h3{
+    width:150px;
+  }
+}
+
 @media only screen and (max-width: 828px) {
   img{
     width:400px;
+  }
+
+  h1{
+      margin-top: 150px;
   }
 
   h2 {

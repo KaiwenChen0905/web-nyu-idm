@@ -128,7 +128,7 @@ h2 {
   font-size: 25px;
   position:relative;
   width: 27%;
-  top: -370px;
+  top: -392px;
   text-align: right;
   margin-left: 1250px;
   animation: bounce 5s;
@@ -147,7 +147,7 @@ h4 {
   font-size: 25px;
   line-height: 42px;
   position:relative;
-  top: -510px;
+  top: -540px;
   left: 200px;
   width: 300px;
   animation: bounce 5s;
@@ -178,7 +178,96 @@ a:hover {
   opacity: 0.99;
 }
 
+/*iPad Pro*/
+@media only screen and (max-width: 1024px) {
+
+  section{
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:1366px;
+   box-sizing:border-box;
+   padding:0px;
+   transition:0.5s;
+   margin-top: -30px;
+  }
+
+  body {
+    background-color: floralwhite;
+  }
+
+  .wallet {position: relative;}
+  .wallet .link{
+    position: absolute;
+    right:0px;
+    top: 0px;
+  }
+
+
+  img{
+    width:45%;
+    height:50%;
+  }
+
+  h1{
+    font-size:80px
+}
+
+  h2{
+    font-size: 10px
+    position:relative;
+    top: -540px;
+    left: 760px;
+    width: 100px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  h3 {
+    font-size: 5px;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 30px;
+    position:relative;
+    top: -700px;
+    left: 120px;
+    width: 120px;
+
+  }
+
+  a {
+    color: floralwhite;
+    font-size:28px;
+    text-decoration: none;
+    background-color: grey;
+    opacity: 0.8;
+    line-height: 100px;
+    border-radius: 50%;
+    width:100px;
+    height:auto;
+    left: 650px;
+    top: 100px;
+  }
+}
+
+/* iPhone XR */
 @media only screen and (max-width: 828px) {
+
+    section{
+     position:absolute;
+     top:0;
+     left:0;
+     width:100%;
+     height:1792px;
+     box-sizing:border-box;
+     padding:0px;
+     transition:0.5s;
+     margin-top: -30px;
+    }
+
   body {
     background-color: floralwhite;
   }
@@ -192,22 +281,21 @@ a:hover {
 
 
   img{
-    width:60%;
+    width:50%;
     height:50%;
   }
 
   h1{
-    font-size: 80px
+    font-size: 60px;
   }
 
   h2{
-    font-size: 15px
+    font-size: 20px;
     position:relative;
-    top: -330px;
-    left: 680px;
-    width: 100px;
+    width: 80px;
     text-align: center;
-    margin-left: 0;
+    margin-left: -100px;
+    margin-top: 280px;
   }
 
   h3 {
@@ -215,11 +303,11 @@ a:hover {
   }
 
   h4 {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 30px;
     position:relative;
-    top: -650px;
-    left: 30px;
+    margin-left: -60px;
+    margin-top: -150px;
     width: 150px;
 
   }
@@ -234,5 +322,7 @@ a:hover {
     border-radius: 50%;
     width:100px;
     height:auto;
+    margin-left: -120px;
+    margin-top: -40px;
   }
 }
