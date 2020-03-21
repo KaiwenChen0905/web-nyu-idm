@@ -154,6 +154,14 @@ h4 {
   animation-iteration-count: infinite;
 }
 
+h5 {
+  color: floralwhite;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: -50px;
+}
+
 a {
   color: floralwhite;
   font-size:28px;
