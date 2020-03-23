@@ -86,7 +86,7 @@ h1 {
   margin: auto;
   background-color: Dimgrey;
   box-shadow: 10px 10px white;
-  margin-top: 30px;
+  margin-top: 20px;
   animation: fadeIn 3s;
 }
 
@@ -121,10 +121,72 @@ a {
   animation: fadeIn 3s;
 }
 
+@media only screen and (max-width: 1242px) {
+  body {
+    font-size: 30px;
+    background-color:Bisque;
+  }
+
+  section{
+    position: relative;
+    top: 2688px;
+    padding: 100px;
+    width:100%;
+    min-height: 2688px;
+    box-sizing: border-box;
+  }
+
+  section h4{
+    margin-top: 100px;
+    font-family: "Amatic SC";
+    color: gold;
+    font-size: 80px;
+
+  }
+
+  section p {
+      font-family: "Spartan";
+      color: #fff;
+      font-size: 25px;
+  }
+
+
+  h1 {
+    font-family: "Spartan";
+    color: floralwhite;
+    font-size: 90px;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    background-color: Dimgrey;
+    box-shadow: 10px 10px white;
+    margin-top: 150px;
+  }
+
+  h2 {
+    font-family: "Spartan";
+    font-style: normal;
+    color: dimgrey;
+    font-size: 50px;
+    margin-top: 120px;
+  }
+
+  img{
+    width:80%;
+    height:80%;
+    margin-top: 20px;
+  }
+
+  a {
+    font-size: 50px;
+    margin-top: 120px;
+  }
+
+}
 
 @media only screen and (max-width: 1024px) {
   body {
-    font-size: 14px;
+    font-size: 25px;
     background-color:Bisque;
   }
 
@@ -137,36 +199,50 @@ a {
     box-sizing: border-box;
   }
 
+  section h4{
+    margin-top: 60px;
+    font-family: "Amatic SC";
+    color: gold;
+    font-size: 60px;
+
+  }
+
+  section p {
+      font-family: "Spartan";
+      color: #fff;
+      font-size: 22px;
+  }
+
 
   h1 {
     font-family: "Spartan";
     color: floralwhite;
-    font-size: 40px;
-    width: 30%;
+    font-size: 70px;
+    width: 45%;
     height: 50%;
     margin: auto;
     background-color: Dimgrey;
     box-shadow: 10px 10px white;
-    margin-top: 50px;
+    margin-top: 150px;
   }
 
   h2 {
     font-family: "Spartan";
     font-style: normal;
     color: dimgrey;
-    font-size: 30px;
-    margin-top: 20px;
+    font-size: 40px;
+    margin-top: 100px;
   }
 
   img{
-    width:70%;
+    width:80%;
     height:80%;
     margin-top: 20px;
   }
 
   a {
-    font-size: 25px;
-    margin-top: 20px;
+    font-size: 45px;
+    margin-top: 100px;
   }
 
 }
@@ -174,7 +250,7 @@ a {
 
 @media only screen and (max-width: 828px) {
   body {
-    font-size: 14px;
+    font-size: 20px;
     background-color:Bisque;
   }
 
@@ -191,13 +267,13 @@ a {
   h1 {
     font-family: "Spartan";
     color: floralwhite;
-    font-size: 40px;
-    width: 35%;
+    font-size: 60px;
+    width: 45%;
     height: 50%;
     margin: auto;
     background-color: Dimgrey;
     box-shadow: 10px 10px white;
-    margin-top: 50px;
+    margin-top: 150px;
   }
 
   h2 {
@@ -205,18 +281,18 @@ a {
     font-style: normal;
     color: dimgrey;
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 60px;
   }
 
   img{
-    width:70%;
+    width:80%;
     height:80%;
     margin-top: 20px;
   }
 
   a {
-    font-size: 25px;
-    margin-top: 20px;
+    font-size: 35px;
+    margin-top: 60px;
   }
 
 }

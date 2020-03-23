@@ -100,6 +100,39 @@ a:hover{
   color: black;
 }
 
+@media only screen and (max-width: 1242px) {
+  img{
+    width:600px;
+  }
+
+  h1{
+      margin-top: 120px;
+      font-size: 70px;
+  }
+
+  h2 {
+    font-family: "Spartan";
+    width: 600px;
+    font-size: 35px;
+    text-align: justify;
+    line-height: 47px;
+  }
+
+  h4 {
+    font-family: "Spartan";
+    width: 600px;
+    font-size: 35px;
+    text-align: justify;
+    line-height: 47px;
+  }
+
+  h3{
+    font-size: 30px;
+    width:300px;
+    margin-bottom: 100px;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   img{
     width:600px;
@@ -107,24 +140,28 @@ a:hover{
 
   h1{
       margin-top: 100px;
+      font-size: 60px;
   }
 
   h2 {
     font-family: "Spartan";
     width: 600px;
+    font-size: 30px;
     text-align: justify;
-    line-height: 50px;
+    line-height: 42px;
   }
 
   h4 {
     font-family: "Spartan";
     width: 600px;
+    font-size: 30px;
     text-align: justify;
-    line-height: 50px;
+    line-height: 42px;
   }
 
   h3{
-    width:150px;
+    font-size: 30px;
+    width:300px;
   }
 }
 
@@ -140,18 +177,21 @@ a:hover{
   h2 {
     font-family: "Spartan";
     width: 400px;
+    font-size: 25px;
     text-align: justify;
-    line-height: 30px;
+    line-height: 35px;
   }
 
   h4 {
     font-family: "Spartan";
     width: 400px;
+    font-size: 25px;
     text-align: justify;
-    line-height: 30px;
+    line-height: 35px;
   }
 
   h3{
-    width:150px;
+    font-size: 20px;
+    width:200px;
   }
 }

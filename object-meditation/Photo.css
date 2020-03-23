@@ -154,12 +154,14 @@ a:hover{
   color: black;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1242px) {
   .Photo {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 120px;
+    margin-left: -20px;
   }
   .Photo2 {
     display: flex;
@@ -174,10 +176,14 @@ a:hover{
     margin-right: -120px;
   }
 
+  h1{
+    font-size: 70px;
+  }
+
   h2 {
     font-family: "Spartan";
     color: floralwhite;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     width: 25%;
     height: 50%;
@@ -188,10 +194,60 @@ a:hover{
   h3 {
     font-family: "Spartan";
     color: floralwhite;
-    font-size: 18px;
+    font-size: 30px;
     width: 40%;
     text-align:justify;
-    line-height: 30px;
+    line-height: 42px;
+    margin-left: 90px;
+
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .Photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: -20px;
+  }
+  .Photo2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  img{
+    width:80%;
+    height:50%;
+    margin-right: -120px;
+  }
+
+  h1{
+    font-size: 70px;
+  }
+
+  h2 {
+    font-family: "Spartan";
+    color: floralwhite;
+    font-size: 25px;
+    text-align: center;
+    width: 25%;
+    height: 50%;
+    margin: auto;
+    margin-top: 60px;
+  }
+
+  h3 {
+    font-family: "Spartan";
+    color: floralwhite;
+    font-size: 30px;
+    width: 40%;
+    text-align:justify;
+    line-height: 42px;
     margin-left: 90px;
 
   }
@@ -204,6 +260,8 @@ a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 100px;
+    margin-left: 50px;
   }
   .Photo2 {
     display: flex;
@@ -221,7 +279,7 @@ a:hover{
   h2 {
     font-family: "Spartan";
     color: floralwhite;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     width: 25%;
     height: 50%;
@@ -232,10 +290,10 @@ a:hover{
   h3 {
     font-family: "Spartan";
     color: floralwhite;
-    font-size: 18px;
+    font-size: 25px;
     width: 40%;
     text-align:justify;
-    line-height: 30px;
+    line-height: 35px;
     margin-left: 90px;
 
   }

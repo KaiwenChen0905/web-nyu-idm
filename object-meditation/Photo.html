@@ -30,13 +30,13 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript">
     $("document").ready(function(){
-      $("#walletphoto").click(function(){
-        // if ( $("#walletphoto").attr("src") === "./assets/Photo2.png" ) {
-        //  $("#walletphoto").attr("src", "./assets/Photo.png");
-        // } else {
-        //  $("#walletphoto").attr("src", "./assets/Photo2.png");
-        // }
-        $("#walletphoto").attr("src", ( ($("#walletphoto").attr("src") === "./assets/Photo2.png") ? "./assets/Photo.png" : "./assets/Photo2.png"));
+      $("#walletphoto").click(function(){        // if ( $("#walletphoto").attr("src") === "./assets/Photo2.png" ) {
+              //  $("#walletphoto").attr("src", "./assets/Photo.png");
+              // } else {
+              //  $("#walletphoto").attr("src", "./assets/Photo2.png");
+              // }
+        $("#walletphoto").attr("src", ( ($("#walletphoto").attr("src") ===
+         "./assets/Photo2.png") ? "./assets/Photo.png" : "./assets/Photo2.png"));
       });
     })
     </script>
