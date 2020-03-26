@@ -15,9 +15,21 @@ console.log(namesArray.length);
 
 console.log(randomName);
 
-let arrayAsString = namesArray.join(', ');
+let arrayAsString = namesArray.join('🤮 ');
 console.log(arrayAsString);
 console.log(namesArray);
+
+let sortedNames = namesArray.sort();
+console.log(sortedNames);
+
+let text = "";
+for (i = 0; i < namesArray.length; i++) {
+  text +=namesArray[i] + "🔜" + i +"<br>";
+}
+
+
+
+$("#listNames").html(text);
 
 $('#name').html(namesArray[n]);
 
